@@ -1,0 +1,34 @@
+#content {
+  /* background-color: aqua; */
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.top-navbar a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.main {
+  padding: 16px;
+}
+
+/* #overflow-content {
+  overflow: scroll;
+} */
