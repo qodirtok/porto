@@ -1,61 +1,105 @@
-#content {
-  /* background-color: aqua; */
+body {
+  margin: 0;
+  min-height: 100vh;
 }
 
 #header {
+  padding: 15px 0;
+  background-color: bisque;
+}
+
+#header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
-#about {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#portofolio {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#contact {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.top-navbar {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.top-navbar a {
-  float: right;
+.logo {
   display: block;
-  text-align: center;
-  padding: 14px 16px;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav ul li {
+  float: left;
+  margin-left: 5px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.main-nav ul li a {
+  display: block;
   text-decoration: none;
+  padding: 5px 8px;
+  font-size: 15px;
   color: black;
+  transition: all 0.3s;
 }
 
-.top-navbar a:hover {
-  color: aliceblue;
+.main-nav ul li:hover a {
+  color: rgb(199, 234, 234);
 }
 
-.main {
-  padding: 16px;
+@media screen and (min-width: 767px) {
+  .nav-ico {
+    display: none;
+  }
 }
 
-/* #overflow-content {
-  overflow: scroll;
-} */
+@media screen and (max-width: 767px) {
+  .nav-ico:after {
+    content: "≡";
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+  }
+
+  .nav-ico.active:after {
+    content: "×";
+  }
+
+  .nav-ico:hover:after {
+    color: rgb(199, 234, 234);
+  }
+
+  .main-nav {
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100% - 50px);
+    height: 100%;
+    background-color: bisque;
+    padding-top: 60px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+
+  .main-nav.active {
+    transform: translateX(0%);
+  }
+
+  .main-nav ul li {
+    margin: 0;
+    float: none;
+    text-align: center;
+    /* align-items: center; */
+    /* border-bottom: 1px solid; */
+  }
+
+  .main-nav ul li a {
+    padding: 15px;
+  }
+}
