@@ -76,7 +76,7 @@ body {
   }
 
   .nav-ico:hover:after {
-    color: rgb(199, 234, 234);
+    color: rgb(184, 241, 241);
   }
 
   .main-nav {
@@ -107,4 +107,28 @@ body {
   .main-nav ul li a {
     padding: 15px;
   }
+}
+
+
+.jumbotron {
+  padding-top: 2rem;
+  /* min-height: 100vh; */
+}
+
+.about {
+  background-color: #a2d9ff;
+  padding-top: 2rem;
+  /* min-height: 100vh; */
+}
+
+.portofolio {
+  background-color: #f8f8f8;
+  padding-top: 2rem;
+  /* min-height: 100vh; */
+}
+
+.contact {
+  background-color: #a2d9ff;
+  padding-top: 2rem;
+  /* min-height: 100vh; */
 }
