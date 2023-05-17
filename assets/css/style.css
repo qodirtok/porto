@@ -22,6 +22,11 @@ body {
   display: block;
 }
 
+.header-left a {
+  display: block;
+  text-decoration: none;
+}
+
 .main-nav ul {
   padding: 0;
   margin: 0;
