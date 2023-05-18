@@ -58,7 +58,7 @@ body {
   padding: 5px 8px;
   margin: 0 15px;
   font-size: 15px;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   transition: 0.3s;
   letter-spacing: 2px;
   font-weight: 500;
@@ -193,10 +193,19 @@ body {
   /* min-height: 100vh; */
 }
 
+.contact a {
+  text-decoration: none;
+}
+
 .copy {
   background-color: #a2d9ff;
   margin: 0;
   /* justify-content: center; */
   /* text-align: center; */
   /* min-height: 100vh; */
+}
+
+.copy p {
+  /* color: #ffff; */
+  text-align: right;
 }
