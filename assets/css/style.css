@@ -5,7 +5,7 @@ body {
 
 #header {
   padding: 15px 0;
-  background-color: bisque;
+  background-color: #000000;
 }
 
 #header .container {
@@ -45,7 +45,7 @@ body {
   text-decoration: none;
   padding: 5px 8px;
   font-size: 15px;
-  color: black;
+  color: rgb(255, 255, 255);
   transition: all 0.3s;
 }
 
@@ -68,7 +68,7 @@ body {
     display: block;
     text-align: center;
     line-height: 40px;
-    color: black;
+    color: rgb(252, 252, 252);
   }
 
   .nav-ico.active:after {
@@ -86,7 +86,7 @@ body {
     top: 0;
     width: calc(100% - 50px);
     height: 100%;
-    background-color: bisque;
+    background-color: rgb(0, 0, 0);
     padding-top: 60px;
     transform: translateX(-100%);
     transition: all 0.3s;
@@ -111,9 +111,63 @@ body {
 
 
 .jumbotron {
-  padding-top: 2rem;
-  /* min-height: 100vh; */
+  /* padding-top: 2rem; */
+  /* min-height: 80vh; */
 }
+
+.wave-top {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-top svg {
+  /* position: relative; */
+  display: block;
+  width: calc(155% + 1.3px);
+  height: 265px;
+}
+
+.wave-top .shape-fill {
+  fill: #000000;
+}
+
+.wave-bottom {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+  /* position: relative; */
+  display: block;
+  width: calc(155% + 1.3px);
+  height: 265px;
+}
+
+.wave-bottom .shape-fill {
+  fill: #000000;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.spacer.layer1 {
+  background-image: url(layer1.svg);
+}
+
 
 .about {
   background-color: #a2d9ff;
