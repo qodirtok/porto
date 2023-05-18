@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  overflow-x: hidden;
 }
 
 #header {
@@ -113,6 +114,7 @@ body {
 .jumbotron {
   /* padding-top: 2rem; */
   /* min-height: 80vh; */
+  /* background-color: #000000; */
 }
 
 .wave-top {
@@ -162,15 +164,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* bottom: 100; */
 }
 
-.spacer.layer1 {
-  background-image: url(layer1.svg);
+.layer1 {
+  background-image: url(../images/layer3.svg);
 }
 
 
 .about {
-  background-color: #a2d9ff;
+  background-color: #da3f67;
   padding-top: 2rem;
   /* min-height: 100vh; */
 }
