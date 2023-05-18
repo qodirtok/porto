@@ -208,4 +208,5 @@ body {
 .copy p {
   /* color: #ffff; */
   text-align: right;
+  /* padding: auto; */
 }
