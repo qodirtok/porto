@@ -86,11 +86,12 @@ body {
     line-height: 40px;
     letter-spacing: 2px;
     font-weight: 500;
-    color: rgb(252, 252, 252);
+    color: #0B58CA;
   }
 
   .nav-ico.active:after {
     content: "×";
+    color: #0B58CA;
   }
 
   .nav-ico:hover:after {
