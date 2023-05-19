@@ -17,6 +17,18 @@ body {
   font-style: normal;
 }
 
+.background-gradiend {
+  position: absolute;
+  width: 1012px;
+  height: 696px;
+  /* left: 1012px; */
+  top: 0px;
+  background-image: url(../images/Vector3.svg);
+  /* background: linear-gradient(240.22deg, rgba(226, 255, 0, 0.24) 0%, rgba(0, 209, 255, 0.24) 100%); */
+  filter: blur(78px);
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -29,6 +41,7 @@ body {
   /* gap: 612px; */
   /* position: fixed; */
   margin: 0 140px 0 140px;
+
 }
 
 .left-nav h1 {
@@ -358,6 +371,7 @@ body {
   align-items: center;
   padding: 40px 0px;
   gap: 4px;
+  background: #161616;
 }
 
 .footer p {
@@ -367,6 +381,34 @@ body {
 
   display: flex;
   align-items: center;
+
+  /* Grey */
+
+  color: #646464;
+}
+
+.footer span {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  /* identical to box height, or 171% */
+
+  display: flex;
+  align-items: center;
+
+  /* Grey */
+
+  color: #646464;
+}
+
+.footer a {
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 
   /* Grey */
 
